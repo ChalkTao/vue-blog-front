@@ -2,18 +2,24 @@
   <div class="wrapper-header">
     <Menu mode="horizontal" :theme="theme1" active-key="1">
       <div class="wrapper-header-nav">
-        <a class="wrapper-header-nav-logo v-link-active" href="/"> <img src="https://file.iviewui.com/dist/fe8d29da1225d943e30f9ee1bddce78f.png"> </a>
+        <a class="wrapper-header-nav-logo v-link-active" href="/">
+          <img src="http://cn.vuejs.org/images/logo.png">
+        </a>
         <div class="wrapper-header-nav-search">
         </div>
 
         <div class="wrapper-header-nav-list">
           <Menu-item key="1">
+            <a href="/">
             <Icon type="ios-paper"></Icon>
             首页
+            </a>
           </Menu-item>
           <Menu-item key="2">
-            <Icon type="social-github"></Icon>
-            Github
+            <a href="https://github.com/ChalkTao/vue-blog-front">
+              <Icon type="social-github"></Icon>
+              Github
+            </a>
           </Menu-item>
           <!--<Submenu key="3">-->
             <!--<template slot="title">-->
@@ -85,5 +91,11 @@
   .wrapper-header-nav-list {
     height: inherit;
     float: right;
+  }
+  .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item a{
+    height: inherit;
+    line-height: inherit;
+    border-bottom: 2px solid transparent;
+    color: #657180;
   }
 </style>
